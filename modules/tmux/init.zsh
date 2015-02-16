@@ -38,7 +38,9 @@ if [[ -z "$TMUX" && -z "$EMACS" && -z "$VIM" ]] && ( \
   fi
 
   # Attach to the 'prezto' session or to the last session used.
-  exec tmux $_tmux_iterm_integration attach-session
+  # Force to 256 colors and don't exec - I want the shell to remain
+  # after tmux exits.
+  tmux -2 $_tmux_iterm_integration attach-session
 fi
 
 #

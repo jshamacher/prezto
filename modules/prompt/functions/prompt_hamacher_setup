@@ -1,0 +1,14 @@
+function prompt_hamacher_vim() {
+  if [ -n "$VIMRUNTIME" ]; then
+    echo "[VIM] "
+  fi
+}
+
+function prompt_hamacher_setup() {
+  #TODO:
+  # Can I embed a newline without including one literally?
+  PROMPT="%{%F{yellow}%}[%n@%M] (%D %*) <%?> <%h> $(prompt_hamacher_vim)[%4c]%{%F{default}%}
+%(!.%{%F{red}%}.%{%F{cyan}%})%#%{%F{default}%} "
+}
+
+prompt_hamacher_setup "$@"
