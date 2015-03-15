@@ -10,6 +10,9 @@
 # sure where that came from, but I should investigate it and incorporate
 # it if useful.
 #TODO:
+# Speaking of tmuxinator, at work I have a standard session for my first
+# shell.  How can I integrate something like that?
+#TODO:
 # As a more general comment - can I adopt this symlink strategy for my
 # DotFiles repository?  Clone into ~/.dotfiles or something, then link?  I
 # could even include a script to automate it.
